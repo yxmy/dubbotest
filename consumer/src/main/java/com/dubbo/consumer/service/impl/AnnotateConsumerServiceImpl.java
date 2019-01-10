@@ -1,9 +1,9 @@
 package com.dubbo.consumer.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.dubbo.config.annotation.Service;
+import com.dubbo.api.service.AnnotateService;
 import com.dubbo.consumer.service.AnnotateConsumerService;
-import com.dubbo.consumer.service.AnnotateService;
+import org.springframework.stereotype.Service;
 
 @Service
 public class AnnotateConsumerServiceImpl implements AnnotateConsumerService {

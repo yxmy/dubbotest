@@ -1,7 +1,7 @@
 package com.dubbo.provider.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.dubbo.provider.service.AnnotateService;
+import com.dubbo.api.service.AnnotateService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
