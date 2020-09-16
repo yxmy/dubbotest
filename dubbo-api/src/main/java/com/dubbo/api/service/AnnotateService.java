@@ -1,6 +1,12 @@
 package com.dubbo.api.service;
 
+import com.dubbo.api.bo.UserBo;
+
+import java.util.List;
+
 public interface AnnotateService {
 
-    public String sayHello(String name);
+    String sayHello(String name);
+
+    List<UserBo> getAllUserInfo();
 }
