@@ -1,6 +1,7 @@
 package com.dubbo.provider.controller;
 
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,5 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/provider/user-info")
 public class UserInfoController {
+
+    @GetMapping(value = "test")
+    public String test(){
+        return "1";
+    }
 
 }

@@ -1,7 +1,8 @@
 package com.dubbo.provider.mapper;
 
 import com.dubbo.provider.entity.UserInfo;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
@@ -11,6 +12,16 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author yuanxin
  * @since 2020-09-16
  */
-public interface UserInfoMapper extends BaseMapper<UserInfo> {
+@Mapper
+@Component
+public interface UserInfoMapper {
+
+    UserInfo selectUser(int id);
+
+    void insertUser(UserInfo userInfo);
+
+    void updateUser(UserInfo userInfo);
+
+    void deleteUser(int id);
 
 }

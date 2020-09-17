@@ -1,7 +1,6 @@
 package com.dubbo.provider.service;
 
 import com.dubbo.provider.entity.UserInfo;
-import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>
@@ -11,6 +10,14 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author yuanxin
  * @since 2020-09-16
  */
-public interface IUserInfoService extends IService<UserInfo> {
+public interface IUserInfoService {
+
+    UserInfo getUserInfo(int id);
+
+    void saveUserInfo(UserInfo userInfo);
+
+    void updateUserInfo(UserInfo userInfo);
+
+    void deleteUserInfo(int id);
 
 }

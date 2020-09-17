@@ -1,11 +1,14 @@
-package com.dubbo.api.po;
+package com.dubbo.api.bean;
 
 import lombok.Data;
 
 import java.io.Serializable;
 
+/**
+ * @author seeyon_yuanxin
+ */
 @Data
-public class User implements Serializable {
+public class UserInfoBean implements Serializable {
 
     private int id;
     private String name;

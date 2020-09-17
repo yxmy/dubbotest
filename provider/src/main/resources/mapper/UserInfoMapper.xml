@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dubbo.provider.mapper.UserInfoMapper">
+    <insert id="insertUser">
+        insert into user_info (name, age, address)
+        values (#{name}, #{age}, #{address})
+    </insert>
+    <update id="updateUser">
+        update user_info set
+        name = #{name},
+        age = #{age},
+        address = #{address}
+        where id = #{id}
+    </update>
+    <delete id="deleteUser">
+        delete from user_info where id = #{id}
+    </delete>
+
+    <select id="selectUser" resultType="com.dubbo.provider.entity.UserInfo">
+        select * from user_info where id = #{id}
+    </select>
+
+</mapper>

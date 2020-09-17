@@ -1,4 +1,4 @@
-package com.dubbo.provider.entity;
+package com.dubbo.provider.dto;
 
 import lombok.Data;
 
@@ -13,7 +13,7 @@ import java.io.Serializable;
  * @since 2020-09-16
  */
 @Data
-public class UserInfo implements Serializable {
+public class UserInfoDto implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
