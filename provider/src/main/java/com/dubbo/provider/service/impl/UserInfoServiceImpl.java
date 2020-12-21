@@ -25,7 +25,7 @@ public class UserInfoServiceImpl implements IUserInfoService {
 
     @Override
     public UserInfo getUserInfo(int id) {
-        return userInfoMapper.selectUser(1);
+        return userInfoMapper.selectUser(id);
     }
 
     @Override

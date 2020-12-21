@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/consumer/user")
 public class UserController {
 
-    private AnnotateConsumerService annotateConsumerService;
+    private final AnnotateConsumerService annotateConsumerService;
     @Autowired
     public UserController (AnnotateConsumerService annotateConsumerService) {
         this.annotateConsumerService = annotateConsumerService;
